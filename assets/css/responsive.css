@@ -1,0 +1,518 @@
+/* =============================================================================
+   RESPONSIVIDADE - Media Queries
+   ============================================================================= */
+
+/* Desktop First - Telas grandes (acima de 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-content .logo {
+        max-width: 450px;
+    }
+
+    .services-container {
+        width: 50%;
+    }
+
+    .slider-container {
+        width: 500px;
+    }
+
+    .gallery-filter {
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .filter-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+/* Laptops e Desktops (até 1400px) */
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .services-container {
+        width: 45%;
+    }
+}
+
+/* Tablets Grandes e Laptops (até 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 2rem;
+    }
+
+    .about-content {
+        gap: 3rem;
+    }
+
+    .gallery-filter {
+        gap: 2.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.7rem 1.8rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .course-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-section {
+        max-width: 450px;
+    }
+
+    .contact-item {
+        padding: 1.1rem 1.4rem;
+    }
+
+    .contact-text {
+        font-size: 0.95rem;
+        justify-content: center;
+    }
+
+    .footer-content {
+        gap: 2.5rem;
+    }
+
+    .footer-logo {
+        max-width: 350px;
+    }
+}
+
+/* Tablets (até 992px) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* Menu Hamburguer */
+    .hamburger-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 25px;
+        top: 15px;
+        background: transparent;
+    }
+
+    .hamburger-lines {
+        width: 24px;
+        height: 18px;
+    }
+
+    .line {
+        height: 2px;
+        background: rgba(255, 229, 236, 0.3) !important;
+        transition: all 0.3s ease;
+    }
+
+    /* Estado ativo do menu */
+    .hamburger-btn.active .line {
+        background: rgba(255, 229, 236, 0.3) !important;
+    }
+
+    /* Outros elementos */
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .services {
+        height: auto;
+        min-height: 100vh;
+        padding: 4rem 0;
+    }
+
+    .services-container {
+        padding: 2rem 0;
+    }
+
+    .slider-container {
+        width: 350px;
+        min-height: 420px;
+        padding-bottom: 12rem;
+        left: 2rem;
+    }
+
+    .card {
+        min-height: 420px;
+        padding: 1.3rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .features li {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .gallery-container {
+        padding: 0 2rem;
+    }
+
+    .gallery-filter {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .contact-section {
+        max-width: 400px;
+    }
+
+    .contact-list {
+        gap: 1rem;
+    }
+
+    .contact-item {
+        padding: 1rem 1.3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-icon {
+        font-size: 1.4rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-decoration {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Tablets Pequenos e Celulares Grandes (até 768px) */
+@media (max-width: 768px) {
+    .nav-menu.desktop {
+        display: none;
+    }
+
+    .nav-menu.mobile {
+        display: flex;
+        padding: 4rem 1.5rem;
+        gap: 1.2rem;
+        background: rgba(60, 34, 24, 0.2); 
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-menu.mobile a {
+        height: 45px;
+        font-size: 0.95rem;
+        background: rgba(158, 116, 116, 0.1); 
+        color: var(--secondary);
+    }
+
+    .hamburger-btn {
+        display: block;
+        right: 20px;
+        top: 12px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hamburger-lines {
+        width: 22px;
+        height: 16px;
+    }
+
+    .line {
+        height: 2px;
+        background: rgba(255, 229, 236, 0.3) !important;
+    }
+
+    .hamburger-btn.active .line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-btn.active .line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .about {
+        padding: 4rem 5%;
+    }
+
+    .services {
+        height: auto;
+        min-height: 100vh;
+        padding: 4rem 0;
+    }
+
+    .services-container {
+        width: 100%;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-container {
+        width: 350px;
+        min-height: 420px;
+        padding-bottom: 12rem;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        padding: 3rem 1rem;
+    }
+
+    .gallery-filter {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+        background: rgba(60, 34, 24, 0.03);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: var(--primary);
+        color: var(--secondary);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .course-text {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .course-title {
+        font-size: 2rem;
+    }
+
+    .contact-section {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* Smartphones (até 480px) */
+@media (max-width: 480px) {
+    .nav-menu.mobile {
+        padding: 3rem 1rem;
+        gap: 1rem;
+    }
+
+    .nav-menu.mobile a {
+        width: 85%;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .hero-content .logo {
+        max-width: 280px;
+    }
+
+    .hamburger-btn {
+        right: 15px;
+        top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .hamburger-lines {
+        width: 20px;
+        height: 14px;
+    }
+
+    .line {
+        height: 1.5px;
+        background: rgba(255, 229, 236, 0.3) !important;
+    }
+
+    .hamburger-btn.active .line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .hamburger-btn.active .line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        padding: 2rem 0;
+    }
+
+    .slider-container {
+        width: 300px;
+        min-height: 380px;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        padding: 2rem 1rem;
+    }
+
+    .gallery-filter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+        text-align: center;
+        background: rgba(60, 34, 24, 0.03);
+        border-radius: 15px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Smartphones pequenos (até 380px) */
+@media (max-width: 380px) {
+    .hamburger-btn {
+        right: 12px;
+        top: 8px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .hamburger-lines {
+        width: 18px;
+        height: 12px;
+    }
+
+    .line {
+        height: 1.5px;
+        background: rgba(255, 229, 236, 0.3) !important;
+    }
+
+    .hamburger-btn.active .line:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .hamburger-btn.active .line:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .gallery-filter {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    .filter-btn {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .contact-section {
+        padding: 0;
+    }
+
+    .contact-list {
+        gap: 0.6rem;
+    }
+}
+
+/* Ajuste para Landscape em Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hamburger-btn {
+        top: 10px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .services {
+        height: auto;
+        min-height: 100vh;
+        padding: 3rem 0;
+    }
+
+    .slider-container {
+        width: 320px;
+    }
+
+    .card {
+        min-height: 360px;
+        padding: 1rem;
+    }
+
+    .gallery {
+        padding: 2rem 1rem;
+    }
+
+    .gallery-filter {
+        margin-bottom: 2rem;
+    }
+
+    .contact-section {
+        padding: 0 2rem;
+    }
+}
