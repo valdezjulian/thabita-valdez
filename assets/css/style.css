@@ -1809,9 +1809,28 @@ body.menu-open {
     /* Tipografia */
     color: #3C2218;
     font-size: 0.9rem;
-
     /* Espaçamento */
     margin: 0.5rem 0;
+}
+
+.copyright .developer {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.copyright .developer a {
+    color: #3C2218;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block; 
+    position: relative; 
+}
+
+.copyright .developer a:hover {
+    color: #2a1810;
+    animation: developerPulse 1s infinite;
 }
 
 
@@ -2091,6 +2110,21 @@ body.menu-open {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* --------------------------------------
+   1.6 Pulse Animation
+   -------------------------------------- */
+   @keyframes developerPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
